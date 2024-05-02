@@ -268,23 +268,23 @@
 
 	};
 
-	var owlCrouselFeatureSlide = function() {
-		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:true,
-		   dots: false,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		})
-	};
+	// var owlCrouselFeatureSlide = function() {
+	// 	$('.owl-carousel').owlCarousel({
+	// 		animateOut: 'fadeOut',
+	// 	   animateIn: 'fadeIn',
+	// 	   autoplay: true,
+	// 	   loop:true,
+	// 	   margin:0,
+	// 	   nav:true,
+	// 	   dots: false,
+	// 	   autoHeight: true,
+	// 	   items: 1,
+	// 	   navText: [
+	// 	      "<i class='icon-arrow-left3 owl-direction'></i>",
+	// 	      "<i class='icon-arrow-right3 owl-direction'></i>"
+	//      	]
+	// 	})
+	// };
 
 	// Document on load.
 	$(function(){
@@ -303,8 +303,27 @@
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
-		owlCrouselFeatureSlide();
+		//owlCrouselFeatureSlide();
 	});
 
 
 }());
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+});

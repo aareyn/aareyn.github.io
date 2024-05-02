@@ -1435,3 +1435,25 @@ body.offcanvas {
   display: flex;
   justify-content: space-between;
 }
+
+.game-img-container img {
+  width: 640px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* #turbo-takeout-carousel .carousel-item {
+  height: 500px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img, .carousel-item video {
+  width: 100%;
+  height: auto;
+} */
+
+

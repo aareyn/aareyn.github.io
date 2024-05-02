@@ -37,8 +37,8 @@
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -157,14 +157,14 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
 										<h2>To see what I have been working on, checkout my Github.</h2>
 										<a href="https://github.com/alexisareyn" target="_blank" rel="noopener noreferrer" class="btn-hire">Github</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -178,21 +178,140 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
-										<h2>Turbo Takeout</h2>
-										<div class="game-img-container">
-											<img src="images/turbotakeout/Logo.png" class="img-responsive" alt="Turbo Takeout Game Logo">
-											<br>
-											<img src="images/turbotakeout/dash.gif" class="img-fluid" alt="Dash.gif">
-											<!-- <img src="images/inkwell2.png" class="img-responsive" alt="Inkwell Game Play"> -->
-										</div>
-										<div class="game-img-container"></div>
-										<br>
-										
-										<div class="ratio ratio-16x9">
-											<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										</div>
-
+										<h2>Turbo Takeout : A Nitro Neon Studios Production</h2>
 										<p>Drive, dash, deliver! In this exciting casual party game,  two drivers battle to deliver food orders within the time limit. They'll stop at nothing to out-deliver their opponent, even stealing each other's orders! Customize your character's appearance with hats and trails, and choose abilities to gain the upper hand.</p>
+										<div class="game-img-container"></div>
+										<h3>Trailer</h3>
+										<video width="640" height="360" controls poster="images/turbotakeout/trailer_cover.png">
+											<source src="images/turbotakeout/TTFinal.mp4" type="video/mp4">
+											Your video does not support the video tag.
+										</video>
+										<a href="https://www.youtube.com/watch?v=mlPTWsG1vqg" class="btn btn-primary btn-learn" target="_blank" rel="noopener noreferrer">View on Youtube</a>
+
+										<h3>The Turbo Takeout Team:</h3>
+										<img width="640" src="images/turbotakeout/TeamPic.JPG" alt="Team Picture">
+										<br>
+										<video width="640" height="360" controls>
+											<source src="images/turbotakeout/TeamVid.mov" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<p>Karl Yan, Kipras Januska, Ella Fox, Adam Gunn, Lexi Reynolds</p>
+
+										<h2 class="colorlib-heading">What I Worked On:</h2>
+
+										<div class="fancy-collapse-panel">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="tt-h1">
+														<h4 class="panel-title">
+															<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tt-collapse-one" aria-expanded="false" aria-controls="tt-collapse-one">Core Order Spawn, Collection, And Delivery System
+															</a>
+														</h4>
+													</div>
+													<div id="tt-collapse-one" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tt-h1">
+														<div class="panel-body">
+															<p>I developed the following systems:</p>
+															<ul>
+																<li>Spawning orders</li>
+																<li>Assigning delivery points</li>
+																<li>Collecting orders</li>
+																<li>Delivering orders</li>
+																<li>Rewarding points</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="tt-h2">
+														<h4 class="panel-title">
+															<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tt-collapse-two" aria-expanded="false" aria-controls="tt-collapse-two">Player Trails, Visual Effects, Shaders 
+															</a>
+														</h4>
+													</div>
+													<div id="tt-collapse-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tt-h2">
+														<div class="panel-body">
+															<video width="640" height="360" controls>
+																<source src="images/turbotakeout/trails.mp4" type="video/mp4">
+																Your browser does not support the video tag.
+															</video>
+
+															<p>I made a plethora of visual effects for our game:</p>
+															<ul>
+																<li>Fireworks played on order delivery</li>
+																<li>Building outline to indicate delivery point</li>
+																<li>Smoke particle system played on spin out</li>
+																<li>Sparks particle system played on dash collision</li>
+																<li>All player trails - I created a wrapper class to allow for players to have a trail renderer, particle system, or VFX system as a trail played on dash</li>
+																<li>Rain on Midnight Munchies Level</li>
+																<li>Feathers played when a duckling is ran over</li>
+																<li>Coin and dollars spilled when player is fined</li>
+																<li>Ghost material for pedestrians and ducklings that have been ran over</li>
+																<li>Golden order sparkles</li>
+																<li>Screen shake on dash collisions</li>
+																<li>Transparent glowing materials for delivery point buildings that are faded when a player drives behind them</li>
+																<li>Outline of level currently highlighted in level select</li>
+																<li>Sunlight and shadows</li>
+																<li>Many more effects and shader graphs to make our game visually appealing</li>
+															</ul>
+														</div> 
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="tt-h3">
+														<h4 class="panel-title">
+															<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tt-collapse-three" aria-expanded="false" aria-controls="tt-collapse-three">Game Control, Rating System, & More
+															</a>
+														</h4>
+													</div>
+													<div id="tt-collapse-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tt-h3">
+														<div class="panel-body">
+															<p>I developed our rating system to track player statistics in each round and assign a rating to each player reminiscent of those on food delivery apps. This rating system was then used to reward players with bonus points.</p>
+															<p>I also was a significant contributer on the following:</p>
+															<ul>
+																<li>Main menu</li>
+																<li>Level select screen</li>
+																<li>Dynamic ready up scene using an object pool</li>
+																<li>Oil slick ability</li>
+																<li>Pedestrians, ducks, cars</li>
+																<li>Player spinning out</li>
+																<li>Audio system</li>
+																<li>Pause Menu</li>
+																<li>Haptics</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="tt-h4">
+														<h4 class="panel-title">
+															<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tt-collapse-four" aria-expanded="false" aria-controls="tt-collapse-four">Trailer
+															</a>
+														</h4>
+													</div>
+													<div id="tt-collapse-four" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tt-h4">
+														<div class="panel-body">
+															<p>To enhance our game's promotion, I produced a trailer for our team and organized auditions to select a talented freelance voice actor to narrate it.</p>
+															<p>Feel free to view the trailer above!</p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="tt-h5">
+														<h4 class="panel-title">
+															<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tt-collapse-five" aria-expanded="false" aria-controls="tt-collapse-five">Graphic Design & Vision
+															</a>
+														</h4>
+													</div>
+													<div id="tt-collapse-five" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tt-h5">
+														<div class="panel-body">
+															<p>I contributed to the theming and artistic direction of our game and designed stickers and assisted in artwork and poster design for our marketing and branding.</p>
+															<!-- put slideshow here! -->
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
 
 										<p>We support two players with two gamepads.</p>
 										<a id="mac" href="https://nitroneon.itch.io/turbo-takeout" download class="btn-hire">Play Our Game Online</a>
@@ -560,7 +679,61 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 								</div>
 							</div>
 						</div>
-						<!-- <div class="col-md-7 col-md-push-1">
+						
+					</div>
+				</div>
+			</section>
+
+			
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				items:1,
+				merge:true,
+				loop:true,
+				margin:10,
+				video:true,
+				lazyLoad:true,
+				center:true,
+				responsive:{
+					480:{
+						items:2
+					},
+					600:{
+						items:4
+					}
+				}
+			});
+		});
+	</script>
+	
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
+<!-- <div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 									<form action="">
@@ -584,11 +757,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 								
 							</div>
 						</div> -->
-					</div>
-				</div>
-			</section>
 
-			<!-- <section class="colorlib-blog" data-section="blog">
+<!-- <section class="colorlib-blog" data-section="blog">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -636,31 +806,6 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 				</div>
 			</section> -->
 
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	</body>
-</html>
 
 <!-- <div id="colorlib-counter" class="colorlib-counters" style="background: #ff9cd9;" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
