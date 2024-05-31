@@ -64,6 +64,7 @@
 <spline-viewer loading-anim-type="none" url="https://prod.spline.design/mT98Bjq3I4Ye7YY6/scene.splinecode"></spline-viewer>
 				<h1 id="colorlib-logo"><a href="index.html">Lexi Reynolds</a></h1>
 				<span class="position">Software Developer</span>
+				<a href="https://www.linkedin.com/in/alexis-reynolds-360b46113/" target="_blank" class="socials"><i class="icon-linkedin2"></i></a>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
@@ -71,6 +72,7 @@
 						<li class="active"><a href="#" data-nav-section="home">Resume</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
 						<li><a href="#" data-nav-section="games">Game Development</a></li>
+						<li><a href="#" data-nav-section="ux">UI/UX Design</a></li>
 						<!-- <li><a href="#" data-nav-section="services">Projects</a></li> -->
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="experience">Work History</a></li>
@@ -83,13 +85,8 @@
 			<div class="colorlib-footer">
 				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
-				<ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-				</ul>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span> </small></p>
+				
 			</div>
 
 		</aside>
@@ -172,6 +169,11 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 			<section class="colorlib-about" data-section="games">
 				<div class="colorlib-narrow-content">
 					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Game Development</h2>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-12">
 							
 							<div class="row">
@@ -181,22 +183,30 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 										<p>Drive, dash, deliver! In this exciting casual party game,  two drivers battle to deliver food orders within the time limit. They'll stop at nothing to out-deliver their opponent, even stealing each other's orders! Customize your character's appearance with hats and trails, and choose abilities to gain the upper hand.</p>
 										<div class="game-img-container"></div>
 										<h3>Trailer</h3>
-										<video width="640" height="360" controls poster="images/turbotakeout/trailer_cover.png">
-											<source src="images/turbotakeout/TTFinal.mp4" type="video/mp4">
-											Your video does not support the video tag.
-										</video>
+										<div class="col-md-12 mb-3 embed-responsive embed-responsive-16by9">
+											<video class="embed-responsive-item"width="640" height="360" controls poster="images/turbotakeout/trailer_cover.png">
+												<source src="images/turbotakeout/TTFinal.mp4" type="video/mp4">
+												Your video does not support the video tag.
+											</video>
+										</div>
+										
 										<a href="https://www.youtube.com/watch?v=mlPTWsG1vqg" class="btn btn-primary btn-learn" target="_blank" rel="noopener noreferrer">View on Youtube</a>
 
 										<h3>The Turbo Takeout Team:</h3>
-										<img width="640" src="images/turbotakeout/TeamPic.JPG" alt="Team Picture">
-										<br>
-										<video width="640" height="360" controls>
-											<source src="images/turbotakeout/TeamVid.mov" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
+										<div class="row">
+											<div class="col-md-12 mb-3">
+												<img class="img-fluid" src="images/turbotakeout/TeamPic.JPG" alt="Team Picture" width="640">
+											</div>
+											<div class="col-md-12 mb-3 embed-responsive embed-responsive-16by9">
+												<video class="embed-responsive-item" controls>
+													<source src="images/turbotakeout/TeamVid.mov" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+											</div>
+										</div>
 										<p>Karl Yan, Kipras Januska, Ella Fox, Adam Gunn, Lexi Reynolds</p>
 
-										<h2 class="colorlib-heading">What I Worked On:</h2>
+										<h2 class="info-labels">What I Worked On:</h2>
 
 										<div class="fancy-collapse-panel">
 											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -313,11 +323,13 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 										</div>
 
 										<p>We support two players with two gamepads.</p>
-										<a id="mac" href="https://nitroneon.itch.io/turbo-takeout" download class="btn-hire" target="_blank">Play Our Game Online</a>
-										<br>
-										<a id="mac" href="downloads/turbotakeout/TurboTakeoutMac.zip" download class="btn-hire" target="_blank">Download Final Version for Mac</a>
-										<br>
-										<a id="mac" href="downloads/turbotakeout/TurboTakeoutWindows.zip" download class="btn-hire" target="_blank">Download Final Version for Windows</a>
+										
+										<h4 class="info-labels">Releases:</h4>
+										<div class="btn-group">
+											<a  href="https://nitroneon.itch.io/turbo-takeout" download class="btn btn-hire" target="_blank">Play Our Game Online</a>
+											<a href="downloads/turbotakeout/TurboTakeoutMac.zip" download class="btn btn-hire" target="_blank">Download for Mac</a>
+											<a href="downloads/turbotakeout/TurboTakeoutWindows.zip" download class="btn btn-hire" target="_blank">Download for Windows</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -326,7 +338,6 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					<br>
 					<div class="row">
 						<div class="col-md-12">
-							
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
@@ -339,12 +350,19 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 										<br>
 										<p>There is much to be revealed with a simple splash of ink upon a white background. Help Inkwell navigate his grayscale world, where he is armed with a simple pot of ink.</p>
 										
-										<a id="mac" href="downloads/inkwell/InkwellFinalBuildMac.zip" download class="btn-hire">Download Final Version for Mac</a>
-										<a id="mac" href="downloads/inkwell/InkwellFinalWindowsBuild.zip" download class="btn-hire">Download Final Version for Windows</a>
-									
-										<a id="mac" href="downloads/inkwell/InkwellSpikeMacBuild.zip" download class="btn-hire">GoldSpike (beta) Version for Mac</a>
-										<a id="mac" href="downloads/inkwell/InkwellSpikeWindowsBuild.zip" download class="btn-hire">GoldSpike (beta)Version for Windows</a>
-										<a href="https://lexarooni.itch.io/inkwell" target="_blank" rel="noopener noreferrer" class="btn-hire">Play Inkwell Online</a>
+										<h4 class="info-labels">Releases:</h4>
+										<div class="btn-group">
+											<a href="https://lexarooni.itch.io/inkwell" target="_blank" rel="noopener noreferrer" class="btn btn-hire">Play Inkwell Online</a>
+											<a id="mac" href="downloads/inkwell/InkwellFinalBuildMac.zip" download class="btn btn-hire">Download for Mac</a>
+											<a id="mac" href="downloads/inkwell/InkwellFinalWindowsBuild.zip" download class="btn btn-hire">Download for Windows</a>
+										</div>
+
+										<h4 class="info-labels">Beta Releases:</h4>
+										<div class="btn-group">
+											<a id="mac" href="downloads/inkwell/InkwellSpikeWindowsBuild.zip" download class="btn btn-hire">Download Beta for Windows</a>
+											<a id="mac" href="downloads/inkwell/InkwellSpikeMacBuild.zip" download class="btn btn-hire">Download Beta for Mac</a>
+											
+										</div>
 									</div>
 								</div>
 							</div>
@@ -354,7 +372,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<div class="hire">
-								<h2>Custom 1986 Zelda Remake by Lexi Reynolds and Abby Peng</h2>
+								<h2 class="info-labels">Custom 1986 Zelda Remake </h2>
+								<h3 class="info-labels">By: Lexi Reynolds and Abby Peng</h3>
 								<div class="game-img-container">
 									<img src="images/zelda.png" class="img-responsive" alt="Zelda Game">
 									
@@ -364,8 +383,12 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 								<p>Link's torch is crucial to being able to explore the dungeons. He must keep it lit by refueling at fire pits around the dungeons. He can burn down barricades to give him access to new areas, but may also release enemies kept at bay. The light also makes it impossible for Link to see the eyes of the Watchers.</p>
 								<P>For our custom mechanic, I worked on the torch object producing light and blacking out unlit areas using a sprite mask, the particle system fire, Watcher enemies, and objects being able to be lit on fire. </P>
 								
-								<a id="mac" href="downloads/zelda/ZeldaMacBuild.zip" download class="btn-hire">Download for Mac</a>
-								<a id="mac" href="downloads/zelda/ZeldaWindowsBuild.zip" download class="btn-hire">Download for Windows</a>
+								<h4 class="info-labels">Releases:</h4>
+								<div class="btn-group">
+									<a id="mac" href="downloads/zelda/ZeldaMacBuild.zip" download class="btn btn-hire">Download for Mac</a>
+								<a id="mac" href="downloads/zelda/ZeldaWindowsBuild.zip" download class="btn btn-hire">Download for Windows</a>
+								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -373,16 +396,180 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 				</div>
 			</section>
 
-			
+			<!-- <section class="colorlib-about" data-section="ux">
+				<div class="colorlib-narrow-content">
+					<h1>UI/UX Design</h1>
+					<div class="row">
+						<div class="col-md-12">
+							
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					
+					
+				</div>
+			</section> -->
 
-			<!-- <section class="colorlib-services" data-section="services">
+
+			<section class="colorlib-about" data-section="ux">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<h2 class="colorlib-heading">Projects & Sample Work</h2>
+							<h2 class="colorlib-heading">UI/UX Design</h2>
 						</div>
 					</div>
-					<div class="row row-pt-md">
+
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="hire">
+								<h2 class="info-labels">Productivity Pals</h2>
+								<h3 class="info-labels">Game-ified Study Planning For Students at the University of Michigan</h3>
+								<p>I worked with a team of three other students to design an app to help UMich students stay on top of their studies. Our campus is known for the large, cute squirrels that call our Diag home. We used these beloved squirrels to create an app where students are rewarded for studying with clothes for their squirrels as well as real-world coupons. </p>
+								<h3 class="info-labels">Design Proces:</h3>
+								<p>We relied on an iterative design process focused on user-reasearch to best design our app. Our process consisted of the following:</p>
+
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="pp-h1">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#pp-collapse-one" aria-expanded="false" aria-controls="pp-collapse-one">User Need and Breakpoint Identification
+													</a>
+												</h4>
+											</div>
+											<div id="pp-collapse-one" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pp-h1">
+												<div class="panel-body">
+													<p>Key Breakpoints and User Needs for Students</p>
+
+													<p>Punctuality Issues:</p>
+													<ul>
+														<li>Problems: Students struggle with being late due to unreliable transportation and poor time management.</li>
+														<li>Factors: Unreliable bus services, parking challenges, and poor personal scheduling.</li>
+														<li>Need: A simple app to assist with time management and transportation planning, providing real-time updates and reminders.</li>
+													</ul>
+													<p>Lack of Focus and Organization:</p>
+													<ul>
+														<li>Problems: Students feel overwhelmed by lengthy to-do lists, affecting their focus and productivity.</li>
+														<li>Factors: Difficulty prioritizing tasks, feeling disorganized, and struggling with long-term deadlines.</li>
+														<li>Need: Motivational support to help students stay on track and reminded of their goals, improving their productivity and focus.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="pp-h2">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#pp-collapse-two" aria-expanded="false" aria-controls="pp-collapse-two">Ideation and Speed Dating
+													</a>
+												</h4>
+											</div>
+											<div id="pp-collapse-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pp-h2">
+												<div class="panel-body">
+													<p>Our team identified a significant need from speed dating sessions with users: students often feel overwhelmed by their to-do lists, leading to a loss of direction and focus. We validated this need by presenting storyboards, gathering feedback, and avoiding leading questions to ensure authentic responses. This issue stood out as the most pressing among various user needs.</p>
+
+													<p>Interviewees responded positively to gamified solutions. They liked the idea of a University of Michigan-themed app where users care for a "Diag Squirrel" by managing tasks and earning rewards. Based on this feedback, we decided to create a gamified study planning app that makes task management enjoyable and engaging.</p>
+												</div> 
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="pp-h3">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#pp-collapse-three" aria-expanded="false" aria-controls="pp-collapse-three">Prototyping and Evaluation
+													</a>
+												</h4>
+											</div>
+											<div id="pp-collapse-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pp-h3">
+												<div class="panel-body">
+													<p>Our team developed a mobile application prototype using Figma and conducted think-aloud user interviews with University of Michigan undergraduates to evaluate its usability. These sessions provided valuable insights into the user experience, highlighting both strengths and areas for improvement. Key issues identified included small button sizes, unclear navigation icons, and difficulties in collecting rewards. Users also faced challenges with the placement of the store and closet icons and equipping items at the bottom of the closet page.</p>
+
+													<p>The app’s minimalist design and intuitive interface were well-received, making navigation easy and features accessible. To enhance usability, we planned to increase button sizes, add pop-up rewards, include text descriptions for navigation icons, extend scrolling capabilities, and reorganize the navigation bar. These refinements aimed to improve the overall user experience and ensure our app meets user needs effectively.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="pp-h4">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#pp-collapse-four" aria-expanded="false" aria-controls="pp-collapse-four">Iteration
+													</a>
+												</h4>
+											</div>
+											<div id="pp-collapse-four" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pp-h4">
+												<div class="panel-body">
+													<p>Based on feedback from user testing, we proceeded with the following enhancements. </p>
+													<ul>
+														<li>Increased Button Sizes: Easier tapping for better accessibility.</li>
+														<li>Redesigned Icons: The coupon store icon was updated to an acorn with a dollar sign for intuitive understanding.</li>
+														<li>Progress Bar: Added in the task overview section for a clear visual representation of task status.</li>
+														<li>Gamification: Users can now feed their virtual squirrel with acorns to level up and unlock new outfits, adding a progression layer.</li>
+														<li>Streamlined Navigation: Separated coupon inventory and wardrobe for easier access. Clicking the squirrel icon now opens the wardrobe, while the coupon inventory is prominently placed on the navigation bar.</li>
+													</ul>
+													<p>Our app addresses the need for motivational support, keeping students motivated, goal-oriented, and on track. The gamified elements and real-life rewards effectively encourage task completion. However, the app currently lacks accountability measures, allowing users to claim rewards without task verification. To enhance effectiveness, future iterations could include stricter verification, like photo evidence of completed tasks, to ensure accountability and improve overall utility.</p>
+												</div>
+											</div>
+										</div>
+									
+									</div>
+								</div>
+
+								<h3 class="info-labels">Final Figma Prototpye</h3>
+								<p>We created this high fidelity prototype to demonstrate the task flows we desired for our applicaiton design. </p>
+								<ul>
+									<li>Navigate to the calendar, create a new task, mark this task as complete, and then collect the acorns for completing the task.</li>
+									<li>Use the acorns to feed your squirrel and level it up. After leveling up your squirrel unlock the superhero outfit and put it on your squirrel. Then use your remaining acorns to purchase a Panera coupon from the store and redeem this coupon in your coupon inventory.
+									</li>
+								</ul>
+
+								<div class="hire iframe-container">
+									<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKS5e4oG3mSrYTT4ftxYOjL%2FProductivity-Pals%3Fnode-id%3D1-99%26t%3D58D3z3WL0XfjTgpa-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A99" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <br>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="hire">
+								<h2 class="info-labels">Custom 1986 Zelda Remake </h2>
+								<h3 class="info-labels">By: Lexi Reynolds and Abby Peng</h3>
+								<div class="game-img-container">
+									<img src="images/zelda.png" class="img-responsive" alt="Zelda Game">
+									
+								</div>
+								<br>
+								<p>The dungeons Link must conquer are dark and filled with intrigue. Blessed with the meager gift of light, Link must navigate his way through the darkness. If he is not careful to keep his torch fueled, the darkness and the Watchers within are sure to strike.</p>
+								<p>Link's torch is crucial to being able to explore the dungeons. He must keep it lit by refueling at fire pits around the dungeons. He can burn down barricades to give him access to new areas, but may also release enemies kept at bay. The light also makes it impossible for Link to see the eyes of the Watchers.</p>
+								<P>For our custom mechanic, I worked on the torch object producing light and blacking out unlit areas using a sprite mask, the particle system fire, Watcher enemies, and objects being able to be lit on fire. </P>
+								
+								<h4 class="info-labels">Releases:</h4>
+								<div class="btn-group">
+									<a id="mac" href="downloads/zelda/ZeldaMacBuild.zip" download class="btn btn-hire">Download for Mac</a>
+								<a id="mac" href="downloads/zelda/ZeldaWindowsBuild.zip" download class="btn btn-hire">Download for Windows</a>
+								</div>
+								
+							</div>
+						</div>
+					</div> -->
+
+					<!-- <div class="row row-pt-md">
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-1">
 								<span class="icon">
@@ -449,9 +636,9 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
-			</section> -->
+			</section>
 
 			<section class="colorlib-skills" data-section="skills">
 				<div class="colorlib-narrow-content">
